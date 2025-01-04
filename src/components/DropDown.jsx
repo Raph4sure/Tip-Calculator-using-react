@@ -1,5 +1,10 @@
-export default function DropDown({children, valueSelect, onChange, labelText, id}) {
-    
+export default function DropDown({
+    children,
+    valueSelect,
+    onChange,
+    labelText,
+    id,
+}) {
     return (
         <div>
             <label htmlFor={id}>{labelText}</label>
@@ -9,7 +14,6 @@ export default function DropDown({children, valueSelect, onChange, labelText, id
                 <option value="10">It was good(10%)</option>
                 <option value="20">Absolutely amazing!(20)%</option>
             </select>
-            {/* <p>Selected value: {valueSelect}</p> */}
         </div>
     );
 }

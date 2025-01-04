@@ -34,11 +34,14 @@ export default function Forms() {
                 value={friendService}
                 onChange={setfriendService}
             />
-            <strong>
-                You pay ${total} (${bill} + ${Tip} tip)
-            </strong>
+            {bill > 0 &&(<>
+                <strong>
+                    You pay ${total} (${bill} + ${Tip} tip)
+                </strong>
+            
             <br/>
-            <button type="button" onClick={reset}>Reset</button>
+            <button type="button" onClick={reset}>Reset</button> </>)
+            }
         </form>
     );
 }

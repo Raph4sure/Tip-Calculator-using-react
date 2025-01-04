@@ -8,13 +8,12 @@ export default function MyService({value, onChange}) {
     return (
         <div>
             <DropDown
-                labelText="This is my bill"
+                labelText="How did you like the service?"
                 id="bill"
                 valueSelect={value}
                 onChange={(e) => onChange(Number(e.target.value))}
             />
-            {/* </DropDown> */}
-            {/* <p>Percentage value: { percentageService }</p> */}
+         
         </div>
     );
 }
